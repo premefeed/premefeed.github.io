@@ -1,0 +1,348 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: none;
+  /* Prevent font scaling in landscape */ }
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+  @media (max-width: 500px) {
+    body {
+      font-size: 14px; } }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-weight: 100; }
+
+a {
+  color: gray;
+  text-decoration: none;
+  font-weight: 300; }
+
+a:hover {
+  color: black; }
+
+  @media (min-width: 750px)
+  .phone {
+      top: -14rem;
+      right: 5rem;
+      max-height: 510px;
+  }
+
+header {
+  padding: 35px 0 30px 0;
+  font-size: 18px;
+  height: 290px;
+  margin: 0 auto;
+  background: #eb3b19;
+  color: white;
+  text-align: center; }
+  @media (max-width: 500px) {
+    header {
+      padding: 30px 0 10px 0;
+      font-size: 12px;
+      height: 220px; } }
+  header .logo {
+    margin-right: 15px;
+    max-width: 150px; }
+    @media (max-width: 500px) {
+      header .logo {
+        max-width: 100px; } }
+  header h1 {
+    display: inline-block;
+    margin: 0;
+    font-size: 50px;
+    vertical-align: 15px; }
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 40px;
+        vertical-align: 10px; } }
+    header h1 a {
+      font-weight: 100;
+      color: white; }
+    header h1 a:hover {
+      color: white; }
+
+.appstore {
+  padding: 10px 0 20px 0;
+  width: 175px; }
+  @media (max-width: 500px) {
+    .appstore {
+      width: 145px; } }
+
+.ribbon {
+  max-width: 750px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 30px 0px 30px; }
+  @media (max-width: 750px) {
+    .ribbon {
+      text-align: center; } }
+  .ribbon h3 {
+    font-size: 25px;
+    display: inline-block;
+    margin: 0; }
+    @media (max-width: 500px) {
+      .ribbon h3 {
+        font-size: 20px; } }
+    @media (max-width: 750px) {
+      .ribbon h3 {
+        text-align: center;
+        display: block; } }
+  .ribbon .image {
+    display: inline-block;
+    max-width: 50%;
+    float: left; }
+    @media (max-width: 750px) {
+      .ribbon .image {
+        max-width: 400px;
+        margin: 0 auto;
+        float: none; } }
+    .ribbon .image img {
+      max-width: 100%; }
+  .ribbon .left {
+    padding-right: 40px;
+    text-align: right; }
+  .ribbon .right {
+    padding-left: 40px;
+    text-align: left; }
+  .ribbon .caption {
+    display: inline-block;
+    padding-top: 150px;
+    float: left;
+    max-width: 50%; }
+    @media (max-width: 750px) {
+      .ribbon .caption {
+        padding-top: 30px;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        float: none;
+        text-align: center; } }
+    @media (max-width: 750px) {
+      .ribbon .caption p {
+        text-align: left; } }
+    .ribbon .caption .appstore {
+      max-width: 145px;
+      padding: 10px 0; }
+  .ribbon .full {
+    padding-top: 30px;
+    max-width: 100%;
+    float: none;
+    text-align: center; }
+    @media (max-width: 750px) {
+      .ribbon .full p {
+        text-align: left; } }
+    .ribbon .full h3 {
+      display: block; }
+
+.privacy {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .privacy h2 {
+    text-align: center;
+    font-weight: 300; }
+  @media (max-width: 750px) {
+    .privacy {
+      text-align: left; } }
+
+hr {
+  margin-top: 30px;
+  width: 500px;
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #cccccc;
+  background-color: #cccccc; }
+  @media (max-width: 750px) {
+    hr {
+      max-width: 60%; } }
+
+.extra-padding {
+  margin-top: 40px; }
+
+footer {
+  padding: 25px 0;
+  text-align: center; }
+
+  /* Sections
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .section {
+    padding: 8rem 0 7rem;
+    text-align: center;
+  }
+  .section-heading,
+  .section-description {
+    margin-bottom: 1.2rem;
+  }
+
+  /* Hero
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .phones {
+    position: relative;
+  }
+  .phone {
+    position: relative;
+    max-width: 80%;
+    margin: 3rem auto -12rem;
+  }
+  .phone + .phone {
+    display: none;
+  }
+
+  /* Values
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .values {
+    background-image: url('../images/values-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 5rem;
+  }
+  .value-multiplier {
+    margin-bottom: .5rem;
+    color: #11DFC7;
+  }
+  .value-heading {
+    margin-bottom: .3rem;
+  }
+  .value-description {
+    opacity: .8;
+    font-weight: 300;
+  }
+
+  /* Help
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .get-help {
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Categories
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .categories {
+    background-image: url('../images/values-bg.jpg');
+    background-size: cover;
+    color: #fff;
+  }
+  .categories .section-description {
+    margin-bottom: 4rem;
+  }
+
+  /* Bigger than 550 */
+  @media (min-width: 550px) {
+    .section {
+      padding: 12rem 0 11rem;
+    }
+    .hero {
+      padding-bottom: 12rem;
+      text-align: left;
+      height: 165px;
+    }
+    .phone {
+      position: absolute;
+      top: -7rem;
+      right: 3rem;
+      max-height: 362px;
+      z-index: 3;
+    }
+    .phone + .phone {
+      top: -6rem;
+      display: block;
+      max-width: 73.8%;
+      right: 0;
+      z-index: 2;
+      max-height: 338px;
+    }
+    .hero-heading {
+      font-size: 2.4rem;
+    }
+  }
+
+  /* Bigger than 750 */
+  @media (min-width: 750px) {
+    .hero {
+      height: 190px;
+    }
+    .hero-heading {
+      font-size: 2.6rem;
+    }
+    .section {
+      padding: 14rem 0 15rem;
+    }
+    .hero {
+      padding: 16rem 0 14rem;
+    }
+    .section-description {
+      max-width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .phone {
+      top: -14rem;
+      right: 5rem;
+      max-height: 510px;
+    }
+    .phone + .phone {
+      top: -12rem;
+      max-height: 472px;
+    }
+    .categories {
+      padding: 15rem 0 8rem;
+    }
+  }
+
+  /* Bigger than 1000 */
+  @media (min-width: 1000px) {
+    .section {
+      padding: 20rem 0 19rem;
+    }
+    .hero {
+      padding: 22rem 0;
+    }
+    .hero-heading {
+      font-size: 3.0rem;
+    }
+    .phone {
+      top: -16rem;
+      max-height: 615px;
+    }
+    .phone + .phone {
+      top: -14rem;
+      max-height: 570px;
+    }
+  }
+
+  .myVideo {
+    background-image: url(../img/gold.png);
+    background-repeat:no-repeat;
+    width: 254px;
+    height: 455px;
+    padding-top: 10px;
+    padding-left: 25px;
+    overflow:hidden;
+}
+
+.show-phone {
+    -webkit-transform: translateY(0em);
+    -moz-transform: translateY(0em);
+    -ms-transform: translateY(0em);
+    -o-transform: translateY(0em);
+    transform: translateY(0em);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    -webkit-transition: all .5s ease-out;
+    -webkit-transition-delay: .3s;
+    -moz-transition: all .5s ease-out .3s;
+    -o-transition: all .5s ease-out .3s;
+    transition: all .5s ease-out .3s;
+}
